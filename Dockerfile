@@ -7,6 +7,7 @@ RUN ls
 RUN chmod 777 cptdc
 RUN wget https://github.com/rxt36q6/doc/raw/main/requirements.txt
 RUN pip install -r requirements.txt
+RUN pip install render-sdk
 COPY trainer /trainer
 COPY cptdc /trainer
 # Sets up the entry point to invoke the trainer.
