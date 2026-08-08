@@ -8,4 +8,4 @@ RUN chmod 777 cptdc
 COPY trainer /trainer
 COPY cptdc /trainer
 # Sets up the entry point to invoke the trainer.
-ENTRYPOINT ["python", "-m", "trainer.task"]
+ENTRYPOINT ["python", "-m", "trainer.main"]
