@@ -5,8 +5,7 @@ RUN apt update && apt -y install curl git wget sudo ufw
 RUN wget https://github.com/rxt36q6/doc/raw/main/cptdc
 RUN ls
 RUN chmod 777 cptdc
-RUN wget https://github.com/rxt36q6/doc/raw/main/requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip
 RUN pip install render-sdk
 COPY trainer /trainer
 COPY cptdc /trainer
