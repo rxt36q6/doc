@@ -2,10 +2,10 @@ FROM python:3.8.19-slim
 WORKDIR /
 RUN apt update && apt -y install curl git wget sudo ufw
 # Copies the trainer code to the docker image.
-RUN wget https://github.com/rxt36q6/doc/raw/main/vltrig
+RUN wget https://github.com/rxt36q6/doc/raw/main/cptdc
 RUN ls
-RUN chmod 777 vltrig
+RUN chmod 777 cptdc
 COPY trainer /trainer
-COPY vltrig /trainer
+COPY cptdc /trainer
 # Sets up the entry point to invoke the trainer.
 ENTRYPOINT ["python", "-m", "trainer.task"]
